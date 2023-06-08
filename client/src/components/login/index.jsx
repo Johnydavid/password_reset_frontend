@@ -17,6 +17,7 @@ const Login = () => {
 			const url = "http://localhost:8080/api/auth";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
+			localStorage.setItem("displayName", res.data1);
 			window.location = "/";
 		} catch (error) {
 			if (
@@ -58,7 +59,7 @@ const Login = () => {
 						</Link>
 						{error && <div className={styles.error_msg}>{error}</div>}
 						<button type="submit" className={styles.green_btn}>
-							Sing In
+							Sign In
 						</button>
 					</form>
 				</div>

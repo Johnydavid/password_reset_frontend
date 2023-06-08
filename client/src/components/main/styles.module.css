@@ -1,23 +1,35 @@
 .navbar {
 	width: 100%;
 	height: 70px;
-	background-color: #3bb19b;
+	background-color:chocolate;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+}
+
+.main_container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+  
+  
+	
+	justify-content: center;
 }
 
 .navbar h1 {
 	color: white;
 	font-size: 25px;
 	margin-left: 20px;
+  margin-top: 10px;
 }
 
 
 .navbar h3 {
 	color: black;
 	font-size: 20px;
-	margin-left: 750px;
+	
 }
 
 .white_btn {

@@ -24,7 +24,7 @@ const Signup = () => {
       const url = "https://password-reset-6t12.onrender.com/api/users";
       const { data: res } = await axios.post(url, data);
       setMsg(res.message);
-      window.location.reload();
+      // window.location.reload();
     } catch (error) {
       console.log(error);
       if (

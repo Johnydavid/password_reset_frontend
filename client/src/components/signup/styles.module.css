@@ -90,4 +90,16 @@
     margin: 5px 0;
     font-size:14px;
     text-align: center;
+    background-color: #f34646;
+    color: white;
   }
+
+  .success_msg {
+	background-color: #5cdd5c;
+}
+
+.green_btn {
+	background-color: #3bb19b;
+	color: white;
+	margin: 10px;
+}

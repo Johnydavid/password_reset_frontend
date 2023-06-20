@@ -12,7 +12,8 @@ const EmailVerify = () => {
 
   useEffect(() => {
     const verifyEmailUrl = () => {
-      const url = `http://localhost:8080/api/users/${param.id}/verify/${param.token}`;
+    //   const url = `http://localhost:8080/api/users/${param.id}/verify/${param.token}`;
+	  const url = `https://password-reset-6t12.onrender.com/api/users/${param.id}/verify/${param.token}`
       console.log(param.id);
       axios
         .get(url)

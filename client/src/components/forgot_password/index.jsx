@@ -12,9 +12,11 @@ const ForgotPassword = () => {
     try {
     //   const url = `http://localhost:8080/api/password-reset`;
 	  const url = `https://password-reset-6t12.onrender.com/api/password-reset`
-      const { data } = await axios.post(url, { email });
-      setMsg(data.message);
-      setError("");
+      const { data:res } = await axios.post(url, { email});
+      setMsg(res.message);
+	  console.log(res.message)
+	       setError("");
+
     } catch (error) {
       if (
         error.response &&
@@ -42,6 +44,7 @@ const ForgotPassword = () => {
         />
         {error && <div className={styles.error_msg}>{error}</div>}
         {msg && <div className={styles.success_msg}>{msg}</div>}
+
         <button type="submit" className={styles.green_btn}>
           Submit
         </button>
